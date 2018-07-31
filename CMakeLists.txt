@@ -54,7 +54,7 @@ message(STATUS "Python link flags:" ${Python_Link_Flags})
 include_directories(${Python_Includes})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-find_package( Boost COMPONENTS python REQUIRED)  # find BOOST and boost-python
+find_package( Boost COMPONENTS python27 REQUIRED)  # find BOOST and boost-python
 if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
     MESSAGE(STATUS "found Boost: " ${Boost_LIB_VERSION})
